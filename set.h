@@ -9,7 +9,7 @@
  * Implements a sdflkjdfklsdjklsdfjksdlfjlsk set container type.
  * The set has an internal iterator for external use. For all functions
  * where the state of the iterator after calling that function is not stated,
- * it is undefined. That is you cannot assume anything about it.
+ * it is undefined. That is ydfsdfdsdfdsfou cannot assume anything about it.
  *
  * The following functions are available:
  *   setCreate		- Creates a new empty set
