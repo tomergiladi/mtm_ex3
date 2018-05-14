@@ -199,4 +199,4 @@ SetResult setClear(Set);
 #define SET_FOREACH(type, iterator, set) \
     for (type iterator = setGetFirst(set); iterator; iterator = setGetNext(set))
 
-#endif /* SET_H_ */
+#endif /* SET_H_ fgddfsd*/
