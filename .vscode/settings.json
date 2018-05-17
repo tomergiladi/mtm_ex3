@@ -40,7 +40,15 @@
         "malloc.h": "c",
         "stdlib.h": "c",
         "season.h": "c",
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "hellomake.h": "c",
+        "stdio.h": "c",
+        "strings.h": "c",
+        "user.h": "c",
+        "utils.h": "c",
+        "series.h": "c",
+        "list.h": "c",
+        "mtm_ex3.h": "c"
     },
     "workbench.colorCustomizations": {
         "titleBar.activeBackground": "#ff0000"

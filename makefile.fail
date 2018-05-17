@@ -1,0 +1,17 @@
+CC = gcc
+INC = win32/libmtm.a
+EXEC = prog
+DEBUG_FLAG = -g
+COMP_FLAG = -std=c99 -Wall -Werror
+SRC=src
+BUILD=build
+SRC_LIST=$(wildcard $(SRC)/*.c)
+OBJ_LIST=$(subst $(SRC),$(BUILD),$(SRC_LIST:.c=.o))
+$(EXEC) : $(OBJ_LIST) $(INC)
+	$(CC) $(DEBUG_FLAG) $(OBJ_LIST) $(INC) -o $@
+$(OBJ_LIST):
+	$(CC) -c $(CFLAGS) $(COMP_FLAG) $(DEBUG_FLAG) $(subst $(BUILD),$(SRC),$(@:.o=.c)) -o $@
+hellofunc.o : hellomake.h
+hellomake.o : hellomake.h
+clean:
+	DEL $(OBJS) $(EXEC)
